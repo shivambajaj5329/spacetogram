@@ -17,6 +17,10 @@ function Modal() {
     const [loading, setLoading] = useState(false)
     const {data: session} = useSession();
 
+    
+
+
+
 
     const uploadPost = async() => {
             if(loading) return;

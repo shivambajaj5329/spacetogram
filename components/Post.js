@@ -114,7 +114,6 @@ useEffect(() =>
                     <HeartIcon onClick={likePost} className="btn"/>
 
             )}
-            <p className="text-2xl btn cursor-pointer">{likes.length}</p>
             
             <ChatIcon className="btn" />
             <PaperAirplaneIcon className="btn"/>
@@ -129,7 +128,17 @@ useEffect(() =>
 
       {/*Caption*/}
 
-      <p className = 'p-5 truncate'>
+      <p className = 'p-5 '>
+
+          {likes.length > 1 && (
+              <p className="font-bold mb-1">{likes.length} likes </p>
+          )}
+
+          {likes.length === 1 && (
+              <p className="font-bold mb-1">{likes.length} like </p>
+          )}
+
+          
 
           <span className="font-bold mr-1"> {username}</span>
 

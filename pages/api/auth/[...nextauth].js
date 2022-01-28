@@ -11,6 +11,7 @@ export default NextAuth({
 
   pages:{
       signIn: "/auth/signin",
+      nasa: "/NASA",
 
   },
 
@@ -20,12 +21,8 @@ export default NextAuth({
           .split(' ')
           .join("")
           .toLocaleLowerCase();
-
           session.user.uid = token.sub;
-
-          return session;
-
-          
+          return session;    
       }
   }
 })
