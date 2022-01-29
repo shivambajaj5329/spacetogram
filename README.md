@@ -1,4 +1,4 @@
-# Readme.md
+# Spacestogram by Shivam
 
 
 I made this app using Next.JS and Tailwind CSS. 
