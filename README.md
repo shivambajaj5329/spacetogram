@@ -1,4 +1,4 @@
-# Spacestogram by Shivam
+# Spacestogram
 
 
 I made this app using Next.JS and Tailwind CSS. 
