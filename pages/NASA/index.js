@@ -41,7 +41,10 @@ useEffect(() => {
     
                 if(loading) return;
                 setLoading(true)
-    
+
+		 if (data.copyright === undefined){
+                    data.copyright = 'NASA'
+                }   
                 //1) Create a post and add to firestore ' posts' collection
                 //2) get the post ID for the newly created post
                 //3) upload the image to firebase storage with the post ID
