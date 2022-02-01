@@ -35,8 +35,8 @@ useEffect(() => {
                 return collector += num;
               }, 0);
     
-              if (sum > 0){
-                  console.log("Todays pic has already been posted")
+              if ((sum > 0) || (data.media_type === "video")){
+                  console.log("Todays pic has already been posted or the media type is a video, which my app doesnt support yet")
               }else{
     
                 if(loading) return;
